@@ -385,6 +385,10 @@
     </section>
     <!-- end contact -->
 
+    <!-- Update mobile number in script end tag as well, dynamically updates based on mobile / desktop -->
+    <a href="https://web.whatsapp.com/send?phone=919967839876" class="float" id="whatsapp" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
     <!-- start copyright -->
     <footer id="copyright">
         <div class="container">
@@ -458,6 +462,19 @@
 
             /* wow -----------------*/
             new WOW().init();
+            /* detect mobile ---------------*/
+            if (/Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                // update whatsapp link
+                $('#whatsapp').attr('href', 'https://wa.me/919967839876');
+            } else {
+                let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+                if (isMobile) {
+                    $('#whatsapp').attr('href', 'https://wa.me/919967839876');
+                } else {
+                    // desktop use web whatsapp link
+                    $('#whatsapp').attr('href', 'https://web.whatsapp.com/send?phone=919967839876');
+                }
+            }
         });
 
         /* start preloader */
