@@ -194,7 +194,13 @@ header .social-icon li a {
     margin: 0 !important;
 }
 
-.navbar-default .navbar-brand {
+.company-container {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover {
     color: #28a7e9;
     font-weight: 500;
     font-size: 30px;
@@ -613,6 +619,18 @@ header .social-icon li a {
         padding-top: 5px;
         padding-bottom: 5px;
         line-height: 35px;
+    }
+    .navbar-default .navbar-brand {
+        width: calc(100% - 60px);
+    }
+    .company-name {
+        font-size: 18px;
+    }
+    .company-container {
+        width: calc(100% - 34px);
+        position: absolute;
+        top: 4px;
+        left: 46px;
     }
 }
 
