@@ -627,7 +627,7 @@ header .social-icon li a {
         font-size: 18px;
     }
     .company-container {
-        width: calc(100% - 34px);
+        width: calc(100% - 127px);
         position: absolute;
         top: 4px;
         left: 46px;
@@ -677,5 +677,5 @@ header .social-icon li a {
 }
 
 #industries li{
-    padding: 5px 0;
+    padding: 5px 15px;
 }
