@@ -675,3 +675,7 @@ header .social-icon li a {
 .my-float {
     margin-top: 16px;
 }
+
+#industries li{
+    padding: 5px 0;
+}
